@@ -2,10 +2,6 @@
         <div>
             <h2 style="margin-left: 5px">WABCO</h2>
         </div>
-        <!-- <div>
-            <p-dropdown [options]="jobsList" [(ngModel)]="selectedJobList" [style]="{'width':'250px'}"></p-dropdown>
-            <button [ngClass]="{disabled : !isValid}" type="button" class="btn btn-primary" (click)="startJob()">Start Job</button>
-        </div> -->
         <p-confirmDialog></p-confirmDialog>
         <div style='margin-top: 10px' class="row">
             <div class="col-md-8">
@@ -15,22 +11,6 @@
                             <div>
                                 The uploaded transaction has been removed from the distrubuted ledger
                              </div>
-                        <!-- <p-dataTable [value]="batchData" [rows]="10" [paginator]="true" [pageLinks]="5" [responsive]="true" sortField="id.batchNbr"
-                            sortOrder="-1" tableStyleClass="dataTable">
-                            <p-column field="id.procName" header='Process Name'></p-column>
-                            <p-column field="id.batchNbr" header='Batch Number' [sortable]="true"></p-column>
-                            <p-column field="deltaStartTime" header='Delta Start Time'>
-                                <ng-template let-result="rowData" pTemplate="body">
-                                    {{result.deltaStartTime | date : 'yyyy-MM-dd hh:mm:ss'}}
-                                </ng-template>
-                            </p-column>
-                            <p-column field="deltaEndTime" header='Delta End Time'>
-                                <ng-template let-result="rowData" pTemplate="body">
-                                    {{result.deltaEndTime | date : 'yyyy-MM-dd hh:mm:ss'}}
-                                </ng-template>
-                            </p-column>
-                            <p-column field="statusCd" header='Status'></p-column>
-                        </p-dataTable> -->
                     </div>
                 </div>
             </div>

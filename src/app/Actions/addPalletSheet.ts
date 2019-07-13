@@ -20,31 +20,8 @@ export class AddPalletSheetComponent implements OnInit {
     ngOnInit() {
        var  now = new Date(); 
       var sessionExpirytime = this.getSessionExpiry();
-      //  if(now.getTime() < +sessionExpirytime){
-      //    this.router.navigate(['home']);
-      //    this.EmpDataService.loggedIn = true;
-      //  }
     }
-    
- loginSubmit(value: any) {
-        //  let url ='/login'
-        //   this.http.post(url,value,{responseType: 'text'})
-        // .subscribe(
-        //    (res) => {
-        //        localStorage.setItem("userInfo",JSON.stringify(value));
-        //        this.EmpDataService.setEmpInfo(value);
-        //         this.EmpDataService.loggedIn = true;
-                this.router.navigate(['home']);
-        //         var now = new Date();
-        //         var time = +now.getTime()+ 2*3600*1000;
-        //         document.cookie="sessionExpiry="+time+";"
-        //     },
-        //     (err) => {
-        //         console.log("error", err);
-        //         this.errorMsg = 'Username or password is incorrect';
-        //     }
-        // )
-   }
+  
 
 getSessionExpiry = () => {
     var cookies = document.cookie.split(';')
