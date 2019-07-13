@@ -1,0 +1,13 @@
+.table-responsive {
+    max-height: 380px !important;
+}
+
+.homeButton{
+    width: 200px;
+    background-color: #cfd2d4;
+    border-color: #cfd2d4;
+    /* color: gainsboro; */
+    margin: 10px;
+    margin-left: 250px;
+}
+

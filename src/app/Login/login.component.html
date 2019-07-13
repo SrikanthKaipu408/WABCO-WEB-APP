@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row" style="margin-top: 50px">
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-5 col-sm-offset-2 col-md-offset-2 col-lg-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="text-align:center;font-weight:600;">Welcome To WABCO Login Portal</div>
+                <div class="panel-body" style="padding: 25px">
+                <div><h4 style="text-align: center;">Pallet sheet tracking</h4></div>
+                    <form #lgForm="ngForm" (ngSubmit)="loginSubmit(lgForm.value)">
+                        <div class="input-group form-group" style="margin: 25px">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input placeholder="Username" type="text" name="userName" ngModel class="form-control" required />
+                        </div>
+                        <div class="input-group form-group" style="margin-left: 25px;margin-right: 25px;margin-top: 25px;">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input type="password" name="password" ngModel class="form-control" placeholder="Password" required />
+                        </div>
+                        <div style="display:none" id="error" #error><b style="margin-left: 25px;" class="error">{{errorMsg}}</b></div> 
+                        <button style="float:right;margin-right: 25px;" type="submit" class="btn btn-primary" name="action">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
